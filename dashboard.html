@@ -1,0 +1,18 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Upload Dashboard · Gorae Shorts Uploader</title>
+<style>body{font-family:system-ui,-apple-system,sans-serif;background:#f6f7f9;margin:0;color:#111}header{background:#fff;border-bottom:1px solid #e5e7eb;padding:18px 32px;display:flex;justify-content:space-between;align-items:center}h1{font-size:22px;margin:0}.yt{font-weight:700;color:#f00}main{max-width:1100px;margin:28px auto;padding:0 24px}.card{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:22px;margin-bottom:22px}h2{font-size:18px;margin:0 0 14px}table{width:100%;border-collapse:collapse;font-size:15px}th,td{text-align:left;padding:10px 8px;border-bottom:1px solid #eee}th{color:#666;font-weight:600}.pill{display:inline-block;padding:3px 10px;border-radius:20px;font-size:13px}.wait{background:#fff4d6;color:#8a5a00}.ok{background:#e3f7e8;color:#167a3a}label{display:block;font-weight:600;font-size:14px;margin:12px 0 6px}.f{border:1px solid #d1d5db;border-radius:8px;padding:10px 12px;background:#fafafa;font-size:14px}.row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}.btn{display:inline-block;margin-top:16px;background:#111;color:#fff;border-radius:8px;padding:10px 18px;font-weight:600}small{color:#666}</style></head><body>
+<header><h1>Gorae Shorts Uploader · Upload Dashboard</h1><div><span class="yt">YouTube</span> Uses YouTube API Services · Channel: 고래야미안하다 (@sorrytowhale1)</div></header>
+<main>
+<div class="card"><h2>New upload (owner only)</h2>
+<label>Video file (MP4, 9:16, ≤3 min — own original Short)</label><div class="f">youtube/고래야미안하다/2026-11-11-쌍바닥/render/쌍바닥_v3.mp4 · 14.5 MB · 75 s</div>
+<label>Title</label><div class="f">SK하이닉스 W 완성, 다음 목표 '이 가격'입니다 #SK하이닉스 #하이닉스</div>
+<label>Description</label><div class="f">Pattern lesson: double bottom (W) with neckline, target, false-breakout and invalidation levels. Sources: Yahoo Finance 000660.KS. Not investment advice.</div>
+<div class="row"><div><label>Tags</label><div class="f">SK하이닉스, 하이닉스, 쌍바닥, 차트 패턴</div></div><div><label>Privacy</label><div class="f">public (scheduled)</div></div><div><label>Publish at (KST)</label><div class="f">2026-11-13 09:00 (+09:00)</div></div></div>
+<span class="btn">Schedule upload → videos.insert</span> <small>&nbsp; Uploads via YouTube Data API (scope youtube.upload) to the owner's channel only.</small></div>
+<div class="card"><h2>Upload queue & history</h2><table>
+<tr><th>Slot (KST)</th><th>Video</th><th>Privacy</th><th>Status</th><th>Video ID</th></tr>
+<tr><td>11-13 09:00</td><td>SK하이닉스 W 완성, 다음 목표 '이 가격'</td><td>public · scheduled</td><td><span class="pill wait">Waiting for API audit</span></td><td>—</td></tr>
+<tr><td>11-13 12:00</td><td>Daily issue Short (produced 06:00, reviewed 07:30)</td><td>public · scheduled</td><td><span class="pill wait">Waiting for API audit</span></td><td>—</td></tr>
+<tr><td>11-13 18:00</td><td>Daily market Short</td><td>public · scheduled</td><td><span class="pill wait">Waiting for API audit</span></td><td>—</td></tr>
+<tr><td>Authorization</td><td>OAuth 2.0 (youtube.upload), refresh token encrypted in GitHub Actions Secrets</td><td>—</td><td><span class="pill ok">Connected</span></td><td>—</td></tr>
+</table><p><small>Daily quota plan: ≤6 uploads (videos.insert ≈1,600 units each) + thumbnails.set/videos.update. Access can be revoked at any time in Google Account → Connected apps. <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms</a></small></p></div>
+</main></body></html>
